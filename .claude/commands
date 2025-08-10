@@ -1,0 +1,11 @@
+# Claude Code Custom Commands
+
+## Git operations
+git-acp: |
+  Add all changes, commit with message, and push to remote
+  Usage: /git-acp [commit message]
+  
+## Documentation
+docs-build: |
+  Generate and update all Japanese documentation
+  Usage: /docs-build

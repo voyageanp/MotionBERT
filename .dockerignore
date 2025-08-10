@@ -1,0 +1,49 @@
+# Git関連
+.git
+.gitignore
+
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE関連
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
+
+# 一時ファイル
+*.tmp
+*.temp
+
+# 大きなデータファイル（必要に応じて調整）
+data/
+checkpoint/
+*.mp4
+*.avi
+*.mov
+
+# Docker関連
+Dockerfile
+.dockerignore
+
+# その他
+README.md
+docs/
