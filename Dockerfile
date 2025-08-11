@@ -67,17 +67,7 @@ RUN pip install \
 COPY . /workspace/
 
 # 権限設定
-RUN chmod -R 755 /workspace
-
-# Jupyter Lab設定
-RUN mkdir -p /root/.jupyter && \
-    echo "c.ServerApp.ip = '0.0.0.0'" >> /root/.jupyter/jupyter_lab_config.py && \
-    echo "c.ServerApp.port = 8888" >> /root/.jupyter/jupyter_lab_config.py && \
-    echo "c.ServerApp.open_browser = False" >> /root/.jupyter/jupyter_lab_config.py && \
-    echo "c.ServerApp.allow_root = True" >> /root/.jupyter/jupyter_lab_config.py
-
-# ポート公開
-EXPOSE 8888 6006
+RUN chmod -R a+rX /workspace
 
 # エントリーポイント
 CMD ["/bin/bash"]

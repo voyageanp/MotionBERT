@@ -1,0 +1,21 @@
+assets:
+  # Example: pretrained Pose3D checkpoint
+  # mb_pose3d_best:
+  #   url: https://example.com/path/to/pose3d/best_epoch.bin
+  #   path: checkpoint/pose3d/MB_train_h36m/best_epoch.bin
+  #   sha256: "<optional-sha256-hex>"
+  #   extract: false
+
+  # Example: pretrain checkpoint
+  # mb_pretrain:
+  #   url: https://example.com/path/to/pretrain/best_epoch.bin
+  #   path: checkpoint/pretrain/MB_pretrain/best_epoch.bin
+  #   extract: false
+
+  # Example: small sample data archive
+  # h36m_samples:
+  #   url: https://example.com/path/to/h36m_samples.zip
+  #   path: data/samples/
+  #   sha256: "<optional-sha256-hex>"
+  #   extract: true
+

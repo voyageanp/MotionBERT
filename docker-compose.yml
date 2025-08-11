@@ -13,8 +13,6 @@ services:
       # 結果保存用
       - ./output:/workspace/output
     ports:
-      # Jupyter Lab用
-      - "8888:8888"
       # TensorBoard用  
       - "6006:6006"
     environment:
@@ -41,7 +39,7 @@ services:
       - ./checkpoint:/workspace/checkpoint
       - ./output:/workspace/output
     ports:
-      - "8889:8888"
+      - "8999:8999"
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     deploy:
@@ -51,4 +49,4 @@ services:
             - driver: nvidia
               count: all
               capabilities: [gpu]
-    command: jupyter lab --allow-root --ip=0.0.0.0 --port=8888
+    command: jupyter lab --allow-root --ip=0.0.0.0 --port=8999
