@@ -54,7 +54,8 @@ RUN pip install "smplx[all]"
 RUN pip install \
     jupyter \
     jupyterlab \
-    ipywidgets
+    ipywidgets \
+    cython_bbox
 
 # AlphaPose用の追加パッケージ（オプション）
 RUN pip install \

@@ -1,8 +1,8 @@
-version: '3.8'
-
 services:
   motionbert:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.unified
     container_name: motionbert
     volumes:
       # ソースコードをマウント（開発用）
@@ -31,8 +31,7 @@ services:
 
   # Jupyter Lab専用サービス（オプション）
   jupyter:
-    build: .
-    container_name: motionbert-jupyter
+    image: motionbert
     volumes:
       - .:/workspace
       - ./data:/workspace/data
